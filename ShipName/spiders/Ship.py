@@ -1,7 +1,7 @@
 '''
 Author: shadow3zz
 Date: 2021-01-07 20:19:50
-LastEditTime: 2021-01-08 13:28:38
+LastEditTime: 2021-01-08 13:38:52
 Description: file content
 '''
 import scrapy
@@ -42,7 +42,7 @@ class OdenSpider(scrapy.Spider):
         yield loginIndexReq
 
 
-    # 第三步：分析登录结果，然后发起登录状态的验证请求
+    # 第三步：解析响应内容
     def Parse(self, response):
         print(response.json())
 
